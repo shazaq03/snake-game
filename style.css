@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.full-page-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+
+.main-container{
+    width: 90vmin;
+    height: 90vmin;
+    background-color: #f5f5dc;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+}
+
+.snake{
+    background-color: lightcoral;
+    border: .25vmin solid #333
+}
+
+.food{
+    background-color: lightblue;
+    border: .25vmin solid #333
+}
